@@ -10,7 +10,7 @@ export default function About() {
 
 
     const toggleStyle=()=>{
-        if(myStyle.color=='black'){
+        if(myStyle.color==='black'){
             setMyStyle({
                 color: 'white',
                 backgroundColor: 'black'
@@ -68,7 +68,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <button type="button" className="btn btn-primary my-3" onClick={toggleStyle}>{btnText}</button>
+            {/* <button type="button" className="btn btn-primary my-3" onClick={toggleStyle}>{btnText}</button> */}
         </div>
     )
 }
