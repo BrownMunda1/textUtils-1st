@@ -29,10 +29,10 @@ function App() {
   }
 
   const toggleModeDark=(cls)=>{
-    document.body.removeAttribute('class');
+    // document.body.removeAttribute('class');
 
-    // console.log(cls);
-    document.body.classList.add('bg-'+cls);
+    // // console.log(cls);
+    // document.body.classList.add('bg-'+cls);
     if(mode==='light'){
       setMode('dark');
       document.body.style.backgroundColor='black';
@@ -83,12 +83,12 @@ function App() {
 
   <Navbar aboutText='About' title='TextUtils' mode={mode} toggleModeDark={toggleModeDark}/> 
   {/* <Navbar aboutText='About' title='TextUtils' mode={mode} toggleModeDark={toggleModeDark} toggleModeDarkGreen={toggleModeDarkGreen} toggleModeDarkBlue={toggleModeDarkBlue}/>  */}
-  <Alert alert={alert} />
+  {/* <Alert alert={alert} /> */}
   <div className="container my-3">
   <Routes>
-    <Route exact path="/about" element={<About />}>
+    {/* <Route exact path="/about" element={<About />}>
       
-    </Route>
+    </Route> */}
     <Route exact path="/" element={<TextForm showAlert={showAlert} heading='Enter your text' mode={mode} />}>
     
     </Route>
